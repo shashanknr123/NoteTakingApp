@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Note Taking App</title>
+    <link rel="stylesheet" href="headstyle.css">
+</head>
+<body>
+    
+
+    <header>
+        <h1>Note Taking App</h1>
+    </header>
+    <main>
+        <input type="text" id="search" placeholder="Search notes..." autocomplete="off">
+        <ul id="search-results" class="dropdown hidden"></ul>
+        <div id="note-details" class="hidden">
+            <input type="text" id="title" placeholder="Title">
+            <textarea id="message" placeholder="Message"></textarea>
+            <button id="add-new">Add New</button>
+            <button id="update-note" class="hidden">Update</button>
+            <button id="delete-note" class="hidden">Delete</button>
+            <button id="save-note">Save</button>
+        </div>
+        <div id="notes-list"></div>
+    </main>
+    <footer>
+        <p>© 2024 Note Taking App</p>
+    </footer>
+    <script src="scripthead.js"></script>
+</body>
+</html>
